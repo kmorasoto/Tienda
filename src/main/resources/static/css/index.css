@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 may. 2022, 22:57:13
+    Author     : dell
+*/
+/*
+
+content-box: Tome en cuenta el contenido, border y padding para el calculo de la caja sumativa. 
+border-box: modifica valores de contenido para que coincida con nuestro ancho y alto. 
+*/
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    padding:50px;
+    border-color: 81C2FF;
+    border: 5px solid ;
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+
