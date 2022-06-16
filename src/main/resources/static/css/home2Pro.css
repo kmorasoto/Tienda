@@ -1,0 +1,150 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 jun. 2022, 21:01:41
+    Author     : dell
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oxygen:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    /*darle color a la letra*/
+    color:#fff;
+    background: #183254;
+}
+h1{
+    font-size: 39px;   
+}
+
+h2{
+    font-size: 20px; 
+}
+
+p{
+    font-size: 16px; 
+}    
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding:  0 20px;
+}
+
+.py-30{
+    padding: 30px 0;
+}
+
+/*Configuracion de las cajas*/
+.box{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 50px;
+    height: 250px;
+}
+
+/*Espacio entre los textos de los box*/
+.box h4{
+    padding-bottom: 30px;
+}
+
+#navbar .logo{
+    font-size: 37px;
+    float: left;
+}
+
+ /*Logo*/
+#navbar h1 a{
+    color:#fff;   
+}
+
+ /*Correr los nombres de la lista hacia la derecha*/
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+
+ /*Alinear la lista, y centrarlos*/
+
+#navbar ul li{
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+ /*Cuando pase el mouse encima de la lista de Servicios etc cambie de color*/
+#navbar ul li:hover {
+    color: #A28424
+}
+
+/*Showcase*/
+.showcase {
+    background:  url(../images/hotel-vistalmar.jpg);
+    height: 605px;
+    padding: 190px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+}
+
+.showcase h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/*Box - Feautures*/
+
+#features .feature-1{
+    background: url(../images/Restaurante.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#features .feature-2{
+    background: url(../images/Habitacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#features .feature-3{
+    background: url(../images/eventos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#features .feature-4{
+    background: url(../images/tours.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#features h4{
+    text-transform: uppercase;
+    color: #183254;
+    
+}
+
+#features p{
+    color: #183254;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+

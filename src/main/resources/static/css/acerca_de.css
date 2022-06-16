@@ -1,0 +1,102 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 7 jun. 2022, 22:19:31
+    Author     : dell
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oxygen:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    /*darle color a la letra*/
+    color:#183254;
+    background: #fff;
+}
+
+
+h1{
+    font-size: 25px;   
+    color: #183254;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+ 
+}
+
+.box{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 50px;
+    height: 250px;
+}
+
+.container{
+    margin: auto;
+    overflow: auto;
+    padding:  0 20px;
+}
+
+/*Logo*/
+#navbar h1 a{
+    color:#A28424;
+    text-align: center;
+}
+
+#navbar .logo{
+    font-size: 37px;
+    float: left;
+    padding: 20px 500px;
+}
+
+.showcase {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.showcase h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+#features .feature-1{
+    background: url(../images/fundado.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+    margin-left: 150px;
+   
+}
+#features .feature-2{
+    background: url(../images/Hotel4.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+}
+#features .feature-3{
+    background: url(../images/familia.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+}
+
+/*#features h4{
+    text-transform: uppercase;
+    color: #183254;
+    padding-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 150px;
+    
+}*/
