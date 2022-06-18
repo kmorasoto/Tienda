@@ -23,7 +23,10 @@ public class PersonaController {
     @Autowired
     private IPersonaService personaService;
     
+     //          este GetMapping vendria siendo el URL. Ejemplo: localhost/persona
     @GetMapping("/persona")
+    
+      //          Model nos permite pasar informacion al HTML
     public String index(Model model){
         List<Persona> listaPersona = personaService.getAllPersona();
         model.addAttribute("titulo", "Tabla Personas");

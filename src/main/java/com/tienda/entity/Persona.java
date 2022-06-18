@@ -25,9 +25,10 @@ public class Persona implements Serializable{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id; 
+    
     private String nombre;
-    private String apellido;
     private String apellido1;
+    private String apellido2;
     private String telefono;
     private String email;
     
