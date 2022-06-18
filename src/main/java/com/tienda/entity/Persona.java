@@ -52,20 +52,20 @@ public class Persona implements Serializable{
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public String getApellido1() {
         return apellido1;
     }
 
     public void setApellido1(String apellido1) {
         this.apellido1 = apellido1;
+    }
+
+    public String getApellido2() {
+        return apellido2;
+    }
+
+    public void setApellido2(String apellido2) {
+        this.apellido2 = apellido2;
     }
 
     public String getTelefono() {
