@@ -3,7 +3,8 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+     xmlns:sec="http://www.thymeleaft.org/extras/spring-security">
     <head th:fragment ="head">
         <title>Mi Tienda</title>
         <meta charset="UTF-8">
@@ -32,6 +33,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li sec:authorize="isAuthenticated()" class ="nav-item">
+                                <a class="nav-link" href="#" th:href="@{~/profile/index}"> Profile </a>
+                            </li>
+                             <li sec:authorize="hasrole('ROLE_USER')" class ="nav-item">
+                                <a class="nav-link" href="#" th:href="@{~/admin/index}"> User </a>
+                            </li>
+                             <li sec:authorize="hasAnyRole('ROLE_ADMIN', 'ROLE_MANAGER')" class ="nav-item">
+                                <a class="nav-link" href="#" th:href="@{~/management/index}"> ADMIN </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
