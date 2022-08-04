@@ -62,12 +62,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     auth.authenticationProvider(AuthenticationProvider());
     }
     
-    //El siguiente método funciona para ahcer la autenticacion del usuario
+    //El siguiente método funciona para hacer la autenticacion del usuario
     
     @Override
     protected void configure (HttpSecurity http) throws Exception{
         http.authorizeRequests()
-                .antMatchers("/persona", "/login", "/personasN")
+                .antMatchers("/persona", "/login", "/personaN")
                 .hasRole("ADMIN")
                 .antMatchers("/persona", "/", "/login")
                 .hasAnyRole("USER", "VENDEDOR", "ADMIN")
